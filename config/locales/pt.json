@@ -1,0 +1,38 @@
+{
+	"error": {
+		"required_field": "O %s é um campo obrigatorio e não pode estar vazio.",
+		"character_overflow": "O campo %s deve conter no máximo %s caracteres.",
+		"character_underflow": "O campo %s deve conter no mínimo %s caracteres.",
+		"an_error_occur": "Um error interno ocorreu.",
+		"invalid_input": "Entrada invalida de dados.",
+		"email_registered": "Já existe uma conta com esse email.",
+		"invalid_email_format": "O email digitado é invalido.",
+		"not_found_entity": "O %s com %s não foi encontrado nos registros.",
+		"entity_creation_problem": "Houve um problema na criação de %s, por favor tente novamente.",
+		"destroy_entity": "Houve um problema ao remover %s",
+		"login": "Email e/ou senha estão invalidos",
+		"jtw": {
+			"generate": "Houve um problema na geração do jwt.",
+			"not_found": "O token de autorização não foi encontrado na requisição."
+		},
+		"empty_fields": "O objecto não pode estar vazio, é necessario conter pelo menos um attributo",
+		"translations_overflow": "A quantidade de palavras que poderiam ser traduzidas pelo plano foram atingidas.",
+		"authorization": {
+			"forbiden": "O usuário está tentando acessar um serviço %s o qual não tem permissão.",
+			"user_not_active": "O usuário encontra-se inativo.",
+			"payment_required": "Houve um problema no pagamento da licensa. Por favor contate a Assista.",
+			"expired_license": "A licensa de acesso encontra-se expirada. Por favor contate a Assista.",
+			"inactive_license": "A licensa de acesso encontra-se inativa. Por favor contate a Assista",
+			"unauthorized_domain": "O dominio %s não tem autorização de acessar o sistema."
+		},
+		"payment_service": {
+			"bad_request": "Falha de comunicação com o sistema de pagamento. Verificar os dados enviados. Possiveis errors podem ser encontrados no 'plan', 'hash' ou 'creditCard.token'."
+		},
+		"validations": {
+			"unique_email": "Email já registrado."
+		}
+	},
+	"invoices": {
+		"update_from_notification": "A invoice de id %s foi atualizado o status para %s"
+	}
+}
