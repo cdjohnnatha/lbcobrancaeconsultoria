@@ -5,17 +5,17 @@ const logger = require('morgan');
 const { NotFound } = require('houston-errors').houstonClientErrors;
 const { INTERNAL_SERVER_ERROR } = require('houston-errors').houstonServerErrors;
 const api = require('./config/routes');
+const i18n = require('./config/locales');
 
 const app = express();
 
+app.use(i18n.init);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-console.log(api);
 app.use('/api', api);
-
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => next(NotFound()));

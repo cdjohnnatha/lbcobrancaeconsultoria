@@ -1,5 +1,6 @@
 {
 	"error": {
+		"required": "É obrigatorio: ",
 		"required_field": "O %s é um campo obrigatorio e não pode estar vazio.",
 		"character_overflow": "O campo %s deve conter no máximo %s caracteres.",
 		"character_underflow": "O campo %s deve conter no mínimo %s caracteres.",
