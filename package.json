@@ -1,12 +1,16 @@
 {
-  "name": "lbcobrancaecontulria",
+  "name": "lbcobrancaeconsultoria",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./lib/bin/www",
-    "dev": "nodemon ./lib/bin/www"
+    "start": "babel-node node ./lib/bin/www",
+    "dev": "nodemon --exec babel-node  ./lib/bin/www"
   },
   "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
     "bcrypt": "^3.0.5",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
@@ -27,6 +31,6 @@
     "eslint-plugin-import": "^2.16.0",
     "faker": "^4.1.0",
     "mocha": "^6.0.2",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.11"
   }
 }

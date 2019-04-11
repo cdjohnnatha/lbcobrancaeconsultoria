@@ -1,8 +1,10 @@
 const express = require('express');
 
 const router = express.Router();
-const userControllers = require('../../../lib/api/controllers/v1/usersController');
+const { index, show, create } = require('../../../lib/api/controllers/v1/usersController');
 
-router.get('/', userControllers.show);
+router.get('/', index);
+router.get('/:id', show);
+router.post('/', create);
 
 module.exports = router;

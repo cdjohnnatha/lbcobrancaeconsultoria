@@ -1,6 +1,7 @@
 {
 	"error": {
 		"required": "É obrigatorio: ",
+		"entity_not_found": "O %s com id %s não foi encontrado.",
 		"required_field": "O %s é um campo obrigatorio e não pode estar vazio.",
 		"character_overflow": "O campo %s deve conter no máximo %s caracteres.",
 		"character_underflow": "O campo %s deve conter no mínimo %s caracteres.",
@@ -26,14 +27,8 @@
 			"inactive_license": "A licensa de acesso encontra-se inativa. Por favor contate a Assista",
 			"unauthorized_domain": "O dominio %s não tem autorização de acessar o sistema."
 		},
-		"payment_service": {
-			"bad_request": "Falha de comunicação com o sistema de pagamento. Verificar os dados enviados. Possiveis errors podem ser encontrados no 'plan', 'hash' ou 'creditCard.token'."
-		},
 		"validations": {
 			"unique_email": "Email já registrado."
 		}
-	},
-	"invoices": {
-		"update_from_notification": "A invoice de id %s foi atualizado o status para %s"
 	}
 }
