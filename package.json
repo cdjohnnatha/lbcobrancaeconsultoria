@@ -23,6 +23,7 @@
     "houston-errors": "^1.1.0",
     "i18n": "^0.8.3",
     "jsonschema": "^1.2.4",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "~1.9.0",
     "pg": "^7.9.0",
     "sequelize": "^4.42.0",
