@@ -7,7 +7,7 @@
 const debug = require('debug')('lbcobrancaecontulria:server');
 const http = require('http');
 const app = require('../../app');
-const logger = require('../../config/logger');
+const logger = require('../logger');
 /**
  * Get port from environment and store in Express.
  */

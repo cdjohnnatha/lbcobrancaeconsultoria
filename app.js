@@ -27,7 +27,7 @@ app.use((err, req, res, next) => {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
   err.error = err.message;
   // render the error page
-  res.status(err.status || INTERNAL_SERVER_ERROR.code);
+  res.status((err.status || err.code) || INTERNAL_SERVER_ERROR.code);
   res.send(err);
 });
 

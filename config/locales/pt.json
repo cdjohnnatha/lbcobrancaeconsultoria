@@ -1,8 +1,9 @@
 {
 	"error": {
-		"required": "É obrigatorio: ",
+		"required": "É obrigatorio preencher: ",
 		"entity_not_found": "O %s com id %s não foi encontrado.",
 		"required_field": "O %s é um campo obrigatorio e não pode estar vazio.",
+		"instance_additionalProperty": "Não é permitido o envio de campos adicionais! O campo %s enviado não permitido.",
 		"character_overflow": "O campo %s deve conter no máximo %s caracteres.",
 		"character_underflow": "O campo %s deve conter no mínimo %s caracteres.",
 		"an_error_occur": "Um error interno ocorreu.",
