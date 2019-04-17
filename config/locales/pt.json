@@ -1,7 +1,7 @@
 {
 	"error": {
 		"required": "É obrigatorio preencher: ",
-		"entity_not_found": "O %s com id %s não foi encontrado.",
+		"entity_not_found": "O %s com %s não foi encontrado.",
 		"required_field": "O %s é um campo obrigatorio e não pode estar vazio.",
 		"instance_additionalProperty": "Não é permitido o envio de campos adicionais! O campo %s enviado não permitido.",
 		"character_overflow": "O campo %s deve conter no máximo %s caracteres.",
@@ -22,11 +22,7 @@
 		"translations_overflow": "A quantidade de palavras que poderiam ser traduzidas pelo plano foram atingidas.",
 		"authorization": {
 			"forbiden": "O usuário está tentando acessar um serviço %s o qual não tem permissão.",
-			"user_not_active": "O usuário encontra-se inativo.",
-			"payment_required": "Houve um problema no pagamento da licensa. Por favor contate a Assista.",
-			"expired_license": "A licensa de acesso encontra-se expirada. Por favor contate a Assista.",
-			"inactive_license": "A licensa de acesso encontra-se inativa. Por favor contate a Assista",
-			"unauthorized_domain": "O dominio %s não tem autorização de acessar o sistema."
+			"user_not_active": "O usuário encontra-se inativo."
 		},
 		"validations": {
 			"unique_email": "Email já registrado."

@@ -1,8 +1,14 @@
-const express = require('express');
+import express from 'express';
+
+import passport from 'passport';
+import v1 from './v1';
+import auth from './auth';
+
+require('../passport')(passport);
 
 const router = express.Router();
 
-const v1 = require('./v1');
+router.use('/', auth);
+router.use('/v1', passport.authenticate('jwt', { session: false }), v1);
 
-router.use('/v1', v1);
 module.exports = router;

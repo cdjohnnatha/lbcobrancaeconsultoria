@@ -1,11 +1,7 @@
 module.exports = {
   userCredentials: {
-    email: 'assista@admin.com',
-    password: 'assistaadmin',
-  },
-  defaultUserCredentials: {
-    email: 'assista@user.com.br',
-    password: 'assistauser',
+    email: 'lb@admin.com.br',
+    password: 'lbadmin',
   },
   bearer: 'Bearer ',
   server: 'https://localhost:3000',

@@ -1,22 +1,32 @@
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
+import passport from 'passport';
+import { houstonClientErrors, houstonServerErrors } from 'houston-errors';
+
 const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const { NotFound } = require('houston-errors').houstonClientErrors;
-const { INTERNAL_SERVER_ERROR } = require('houston-errors').houstonServerErrors;
+
+const { NotFound } = houstonClientErrors;
+const { INTERNAL_SERVER_ERROR } = houstonServerErrors;
 const api = require('./config/routes');
 const i18n = require('./config/locales');
 
 const app = express();
 
-app.use(i18n.init);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(i18n.init);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
 app.use('/api', api);
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 // catch 404 and forward to error handler
 app.use((req, res, next) => next(NotFound()));
 
