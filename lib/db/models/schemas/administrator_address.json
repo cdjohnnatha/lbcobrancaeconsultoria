@@ -1,0 +1,23 @@
+{ 
+    "id": "/administrator_address",
+    "type": "object",
+    "properties":{
+      "street": { "type": "string" },
+      "neighbohood": { "type": "string" },
+      "state": { "type": "string" },
+      "postal_code": { "type": "string" },
+      "obs": { "type": "string" },
+      "administrator_id": { "type": "number" },
+      "number": { "type": "string" }
+    },
+    "required": [
+      "street",
+      "neighbohood",
+      "state",
+      "postal_code",
+      "number",
+      "administrator_id",
+      "obs"
+    ],
+    "additionalProperties": false
+  }

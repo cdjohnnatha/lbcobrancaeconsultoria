@@ -30,6 +30,7 @@
     "passport-local": "^1.0.0",
     "pg": "^7.9.0",
     "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0",
     "signale": "^1.4.0"
   },
   "devDependencies": {
