@@ -1,0 +1,14 @@
+{ 
+    "id": "/administrators",
+    "type": "object",
+    "properties":{
+      "cnpj": { "type": "string" },
+      "name": { "type": "string" },
+      "created_by": { "type": "number" }
+    },
+    "required": [
+      "cnpj",
+      "name"
+    ],
+    "additionalProperties": false
+  }
