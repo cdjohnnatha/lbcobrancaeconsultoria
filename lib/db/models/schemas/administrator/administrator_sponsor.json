@@ -1,0 +1,13 @@
+{ 
+    "id": "/administrator_sponsor",
+    "type": "object",
+    "properties":{
+      "name": { "type": "string" },
+      "email": { "type": "string" }
+    },
+    "required": [
+      "email",
+      "name"
+    ],
+    "additionalProperties": false
+  }

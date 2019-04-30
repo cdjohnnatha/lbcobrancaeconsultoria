@@ -1,0 +1,71 @@
+{ 
+    "id": "/administrators",
+    "type": "object",
+    "properties":{
+      "cnpj": { "type": "string" },
+      "name": { "type": "string" },
+      "created_by": { "type": "number" },
+      "address": {
+        "type": "object",
+        "properties":{
+          "street": { "type": "string" },
+          "neighbohood": { "type": "string" },
+          "state": { "type": "string" },
+          "postal_code": { "type": "string" },
+          "obs": { "type": "string" },
+          "number": { "type": "string" }
+        },
+        "required": [
+          "street",
+          "neighbohood",
+          "state",
+          "postal_code",
+          "number"
+        ],
+        "additionalProperties": false
+      },
+      "phones": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties":{
+            "number": { "type": "string" }
+          },
+          "required": [
+            "number"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "sponsor": {
+        "type": "object",
+        "properties":{
+          "name": { "type": "string" },
+          "email": { "type": "string" },
+          "phones": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties":{
+                "number": { "type": "string" }
+              },
+              "required": [
+                "number"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "email",
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "cnpj",
+      "name"
+    ],
+    "additionalProperties": false
+  }
